@@ -1,0 +1,11 @@
+a1.c: In function 'parseSF':
+a1.c:100:25: warning: passing argument 2 of 'strcmp' makes pointer from integer without a cast [-Wint-conversion]
+  100 |     if (strcmp(sir_aux, MAGIC) != 0)
+      |                         ^~~~~
+      |                         |
+      |                         int
+In file included from /usr/include/fortify/string.h:22,
+                 from a1.c:3:
+/usr/include/string.h:37:27: note: expected 'const char *' but argument is of type 'int'
+   37 | int strcmp (const char *, const char *);
+      |                           ^~~~~~~~~~~~
